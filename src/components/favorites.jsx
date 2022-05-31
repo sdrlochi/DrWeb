@@ -16,7 +16,7 @@ const Favorites = () => {
 
     console.log('favvv', favourites)
     return <>
-        <h1>Here are your favorites</h1>
+        <h1 class="header">Here are your favorites</h1>
 
         <div className='card-wrapper'>
             {

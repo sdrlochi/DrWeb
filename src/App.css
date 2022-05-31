@@ -1,8 +1,6 @@
 .card {
-	--card-gradient: rgba(0, 0, 0, 0.8);
-	--card-gradient: #5e9ad9, #e271ad;
-	--card-blend-mode: overlay;
-	background-color: #fff;
+
+	background-color: #ffaaaa;
 	border-radius: 0.5rem;
 	box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
 	padding-bottom: 1rem;
@@ -11,7 +9,7 @@
 }
 
 .card img {
-	border-radius: 0.5rem 0.5rem 0 0;
+	border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 	width: 100%;
 	object-fit: cover;
 	max-height: 30rem;
@@ -19,18 +17,16 @@
 	mix-blend-mode: var(--card-blend-mode);
 }
 
-.card img ~ * {
+.card img~* {
 	margin-left: 1rem;
 	margin-right: 1rem;
 }
 
-.card > :last-child {
+.card> :last-child {
 	margin-bottom: 0;
 }
 
-.card:hover, .card:focus-within {
-	--card-gradient: #24a9d5 20rem;
-}
+
 
 /* Additional demo display styles */
 * {
@@ -45,9 +41,9 @@ body {
 	margin: 0;
 	padding: 1rem;
 	line-height: 1.5;
-	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
- helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-	color: #444;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+	color: black;
 	background-color: #e1faf1;
 }
 
@@ -68,7 +64,44 @@ body {
 	grid-template-columns: repeat(auto-fit, minmax(30ch, 1ch));
 	grid-gap: 1.5rem;
 	max-width: 100vw;
-	width: 120ch;
-	padding-left: 1rem;
-	padding-right: 1rem;
+
+}
+
+.header {
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.favcat {
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button1 {
+	background-color: #cac7c7;
+	border-radius: 20px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+	display: inline;
+
+}
+
+#heart {
+	font-size: 25px;
+}
+
+#heart:hover {
+	color: red;
+}
+
+.h_container {
+	cursor: pointer;
+	color: red;
+}
+
+.h_container > * {
+	font-size: 1.5rem;
+}
+
+.h_container:hover {
+	transform: scale(1.5);
 }

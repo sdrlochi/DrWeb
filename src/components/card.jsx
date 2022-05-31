@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Button from "./button";
 const Card = (props) => {
     const {
         origin,
@@ -36,7 +36,7 @@ const Card = (props) => {
                 <a href="">{name}</a>
             </h3>
             <p>{origin}</p>
-            <button onClick={addToFavorite}>Favorite</button>
+            <Button onClick={addToFavorite} />
         </li>
     </>
 }

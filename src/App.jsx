@@ -6,9 +6,8 @@ import Favorites from './components/favorites';
 function App() {
   return (
     <>
-      <Favorites />
-      <hr></hr>
-      <hr></hr>
+      <Favorites /><br></br>
+      <h1 class="favcat">Choose Your Favorite Cats</h1><br></br>
       <Main />
     </>
   );
